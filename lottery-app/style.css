@@ -1,0 +1,134 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(resourses/main_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: gold;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Стилі для головного меню */
+.main-menu {
+    width: 90%;
+    max-width: 600px;
+    background: #600000;
+    padding: 20px;
+    border: 3px solid gold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Панель статистики */
+.stats-panel {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.main-buttons button {
+    background: gold;
+    border: none;
+    color: #400000;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.2s, background-color 0.3s; /* Додаємо анімацію */
+}
+
+.main-buttons button:hover {
+    background-color: #ffcc00; /* Змінюємо колір фону при наведенні */
+    transform: scale(1.05); /* Збільшуємо кнопку при наведенні */
+}
+
+.main-buttons button:active {
+    transform: scale(0.95); /* Зменшуємо кнопку при натисканні */
+}
+
+/* Вікно повідомлень */
+.message-box {
+    margin-top: 20px;
+    color: gold;
+    background: #800000;
+    padding: 10px;
+    border: 1px solid gold;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Панель правил */
+.rules {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: lightgoldenrodyellow;
+}
+
+/* Стилі для вибору чисел */
+.number-selection {
+    margin-top: 20px;
+}
+
+.number-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.number-buttons button {
+    background: #a03a3a;
+    color: gold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#timerButton {
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    background: gold; /* Золота кнопка */
+    color: #400000; /* Темний червоний текст */
+    transition: background-color 0.3s; /* Анімація переходу фону */
+}
+
+#timerButton.active {
+    cursor: pointer; /* Змінюємо курсор, коли кнопка активна */
+}
+
+#timerButton:hover {
+    background: rgb(218, 149, 0); /* Золота кнопка */
+}
+
+#confirmSelection {
+    background: gold; /* Золота кнопка */
+    color: #400000; /* Темний червоний текст */
+    border: none; /* Без рамки */
+    padding: 15px 20px; /* Внутрішні відступи */
+    text-align: center; /* Центрування тексту */
+    text-decoration: none; /* Без підкреслення */
+    display: inline-block; /* Дозволити стилізувати як блок */
+    font-size: 16px; /* Розмір шрифту */
+    margin: 20px auto; /* Центрування кнопки */
+    cursor: pointer; /* Курсор у вигляді руки */
+    border-radius: 5px; /* Закруглені кути */
+    transition: background-color 0.3s; /* Анімація переходу фону */
+}
+
+#confirmSelection:hover {
+    background: rgb(218, 149, 0); /* Золота кнопка */
+}
+
+#numberSelection {
+    text-align: center; /* Центрування всіх елементів в контейнері */
+}
+

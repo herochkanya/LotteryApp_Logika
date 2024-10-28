@@ -32,6 +32,36 @@ body {
     font-size: 1.2em;
 }
 
+/* Плаваючі банери */
+.banner {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%); /* Центрування банера по вертикалі */
+    width: 200px;
+    height: 90px;
+    background-color: rgb(56, 0, 0);
+    color: rgb(192, 125, 0);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.left-banner {
+    left: 10px;
+}
+
+.right-banner {
+    right: 10px;
+}
+
+.centered-text {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Стилі для основних кнопок */
 .main-buttons button {
     background: gold;
     border: none;
@@ -41,16 +71,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
-    transition: transform 0.2s, background-color 0.3s; /* Додаємо анімацію */
+    transition: transform 0.2s, background-color 0.3s;
 }
 
 .main-buttons button:hover {
-    background-color: #ffcc00; /* Змінюємо колір фону при наведенні */
-    transform: scale(1.05); /* Збільшуємо кнопку при наведенні */
+    background-color: #ffcc00;
+    transform: scale(1.05);
 }
 
 .main-buttons button:active {
-    transform: scale(0.95); /* Зменшуємо кнопку при натисканні */
+    transform: scale(0.95);
 }
 
 /* Вікно повідомлень */
@@ -91,44 +121,42 @@ body {
     cursor: pointer;
 }
 
+/* Стиль для таймера */
 #timerButton {
     font-size: 24px;
     padding: 15px;
     border-radius: 10px;
     margin: 20px 0;
-    background: gold; /* Золота кнопка */
-    color: #400000; /* Темний червоний текст */
-    transition: background-color 0.3s; /* Анімація переходу фону */
+    background: gold;
+    color: #400000;
+    transition: background-color 0.3s;
 }
 
 #timerButton.active {
-    cursor: pointer; /* Змінюємо курсор, коли кнопка активна */
+    cursor: pointer;
 }
 
 #timerButton:hover {
-    background: rgb(218, 149, 0); /* Золота кнопка */
+    background: rgb(218, 149, 0);
 }
 
 #confirmSelection {
-    background: gold; /* Золота кнопка */
-    color: #400000; /* Темний червоний текст */
-    border: none; /* Без рамки */
-    padding: 15px 20px; /* Внутрішні відступи */
-    text-align: center; /* Центрування тексту */
-    text-decoration: none; /* Без підкреслення */
-    display: inline-block; /* Дозволити стилізувати як блок */
-    font-size: 16px; /* Розмір шрифту */
-    margin: 20px auto; /* Центрування кнопки */
-    cursor: pointer; /* Курсор у вигляді руки */
-    border-radius: 5px; /* Закруглені кути */
-    transition: background-color 0.3s; /* Анімація переходу фону */
+    background: gold;
+    color: #400000;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 #confirmSelection:hover {
-    background: rgb(218, 149, 0); /* Золота кнопка */
+    background: rgb(218, 149, 0);
 }
 
 #numberSelection {
-    text-align: center; /* Центрування всіх елементів в контейнері */
+    text-align: center;
 }
-

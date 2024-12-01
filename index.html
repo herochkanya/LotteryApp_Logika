@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лотерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Лівий банер -->
+    <a href="https://www.google.com" class="banner left-banner centered-text" target="_blank">
+        Your ad could be here
+    </a>
+    
+    <!-- Правий банер -->
+    <a href="https://www.google.com" class="banner right-banner centered-text" target="_blank">
+        Your ad could be here
+    </a>
+
+    <div class="main-menu">
+        <!-- Панель статистики -->
+        <div class="stats-panel">
+            <div class="tickets">Білети: <span id="ticketCount">5</span></div>
+            <div class="points">Бали: <span id="pointsCount">0</span></div>
+            <div class="timer">
+                <button id="timerButton">1:00</button>
+            </div>
+        </div>
+        
+        <!-- Основні кнопки -->
+        <div class="main-buttons">
+            <button id="startGame">Почати гру</button>
+            <button id="buyTicket">Купити білет(-10)</button>
+            <button id="claimReward" style="display:none;">Забрати нагороду</button>
+        </div>
+
+        <!-- Вікно повідомлень та правил -->
+        <div class="message-box" id="messageBox"></div>
+        <div class="rules">
+            <h2>Правила</h2>
+            <p>Виберіть до 6 чисел. Якщо ваше число збігається з переможним, ви виграєте 100 балів; якщо ні — втрачаєте 50 балів.</p>
+        </div>
+
+        <!-- Міні-меню для вибору чисел -->
+        <div class="number-selection" id="numberSelection" style="display:none;">
+            <h3>Виберіть числа (до 6):</h3>
+            <div class="number-buttons" id="numberButtons"></div>
+            <button id="confirmSelection" style="display:none;">Підтвердити вибір</button>
+        </div>
+
+        <div class="promo-banner">
+            <h2>Бонус "Підказка"</h2>
+            <p>Ціна: 100 балів</p>
+            <button id="buyBonus" class="bonus-button">Придбати бонус</button>
+            <p id="bonusStatus" style="margin-top: 10px;">Бонус не активовано</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
